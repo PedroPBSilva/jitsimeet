@@ -13,7 +13,9 @@ services:
       - ${CONFIG}/web/load-test:/usr/share/jitsi-meet/load-test:Z
       - ./custom/all_custom.css:/usr/share/jitsi-meet/css/all.css
       - ./custom/watermark.svg:/usr/share/jitsi-meet/images/watermark.svg
+      - ./custom/jitsilogo.png:/usr/share/jitsi-meet/images/jitsilogo.png
       - ./custom/favicon.svg:/usr/share/jitsi-meet/images/favicon.svg
+      - ./custom/title.html:/usr/share/jitsi-meet/title.html
     labels:
       service: "jitsi-web"
     environment:
